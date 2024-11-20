@@ -1,4 +1,4 @@
-# YouTube Video Summarizer with Mixtral, Whisper, and GPT-3
+# AI Video Summarizer with Mixtral, Whisper, and GPT-3
 
 This project leverages the power of language models like GPT-3, Whisper, and Mixtral, combined with AWS infrastructure, to efficiently process and summarize YouTube videos. The system uses Whisper for accurate audio transcription, GPT-3 for generating concise video summaries, and AWS EC2 instances to minimize latency during large model execution. Additionally, a dynamic quiz generation system is implemented using Flask, HTML, and JavaScript to engage users with video content.
 
@@ -31,7 +31,7 @@ stream.download(filename=OUTPUT_AUDIO)
 
 
 
-2. Audio Transcription with Whisper
+### 2. Audio Transcription with Whisper
 Next, the audio is transcribed into text using Whisper. This allows us to convert speech into text efficiently, enabling the summarization step.
 
 import whisper
@@ -43,7 +43,7 @@ print(f'Transcript generated: \n{transcript}')
 
 
 
-3. Summarization with GPT-3
+### 3. Summarization with GPT-3
 The transcribed text is then passed to GPT-3 for summarization. The model processes the text to create a concise summary, including a title and key points from the video.
 
 
@@ -69,7 +69,7 @@ response = openai.ChatCompletion.create(
 summary = response['choices'][0]['message']['content']
 
 
-4. Dynamic Quiz Generation and Feedback
+### 4. Dynamic Quiz Generation and Feedback
 In addition to summarization, the project includes a dynamic quiz generation system implemented using Flask, HTML, and JavaScript. Users can interact with the video summary by answering questions based on the content, and their responses are stored in a database for analysis.
 
 
@@ -89,7 +89,7 @@ def store_user_data(data):
     # Placeholder for storing data
     pass
 
-5. AWS EC2 Integration for Model Deployment
+### 5. AWS EC2 Integration for Model Deployment
 To minimize latency and efficiently handle large models, the project uses AWS EC2 instances. The models (Whisper, GPT-3) are deployed on EC2 instances to ensure high availability and performance.
 
 Usage
@@ -118,7 +118,7 @@ Conclusion: A call for embracing authenticity and meaningful success beyond fame
 
 
 
-For any questions or suggestions, feel free to reach out:
+## For any questions or suggestions, feel free to reach out:
 
 Raj Purohith Arjun
 email: raj2001@tamu.edu
